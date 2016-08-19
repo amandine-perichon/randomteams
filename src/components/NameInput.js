@@ -31,7 +31,7 @@ render () {
   for (let i = 1; i <= this.state.numberOfInput; i++) {
     inputFields.push((
       <div key={i}>
-        <input type="text" onChange={this.updateName} name={i}/><br/>
+        <input type="text" onChange={this.updateName} name={i}/>
         <button type="button" onClick={this.addInput}>+</button>
         </div>
       ))

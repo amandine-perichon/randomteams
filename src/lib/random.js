@@ -1,7 +1,6 @@
 export default function (members, numberTeams) {
   let membersPerTeam = Math.ceil(members.length / numberTeams)
-  console.log(membersPerTeam)
-  if (membersPerTeam * numberTeams > members.length) {
+  if ((membersPerTeam) * (numberTeams -1) === members.length) {
     membersPerTeam = membersPerTeam - 1
   }
   console.log(membersPerTeam)
@@ -24,3 +23,4 @@ export default function (members, numberTeams) {
 // console.log(randomTeams(["Amandine", "Sam", "Jana", "Kamon", "Justin", "Erwin", "Sash", "Prem", "Tim", "Siobhan", "Julia"], 3))
 // console.log(randomTeams(["Amandine", "Sam", "Jana"], 3))
 // console.log(randomTeams(["Amandine", "Sam", "Jana", "Tim"], 3))
+// console.log(randomTeams(["Amandine", "Sam", "Jana", "Tim", "Julia"], 3))

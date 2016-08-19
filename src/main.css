@@ -1,6 +1,14 @@
+body {
+  background-color: lightgrey;
+}
+
+#app div {
+  margin: 0 auto;
+}
+
 .randomteams {
   width: 950px;
-  border: 1px solid black;
+  border: 8px solid black;
   background-color: grey;
 }
 
@@ -14,13 +22,15 @@ h1 {
 .row {
   margin: 0px;
   padding: 0px;
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 .first.row {
+  border-top: 4px solid black;
   min-height: 200px;
 }
 
@@ -39,10 +49,11 @@ h1 {
 }
 
 .game-button.go {
+  border-right: 1px solid black;
   font-size: 30px;
   text-align: center;
   color: white;
-  width: 470px;
+  width: 475px;
   background-color: green;
 }
 
@@ -50,7 +61,7 @@ h1 {
   font-size: 30px;
   text-align: center;
   color: white;
-  width: 470px;
+  width: 475px;
   background-color: red;
 }
 
