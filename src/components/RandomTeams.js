@@ -1,6 +1,7 @@
 import React from 'react'
 import CategoryList from './CategoryList'
 import Controller from './Controller'
+import TeamList from './TeamList'
 //import NameInput from './NameInput'
 
 import randomTeamsGenerator from '../lib/random'
@@ -42,23 +43,18 @@ export default React.createClass({
   onInputNameChange (members) {
     this.setState({members: members})
   },
-  onCategoryChange () {
-
-  },
   go () {
     this.setState({teams: randomTeamsGenerator(this.state.members, this.state.numberTeams)})
   },
   clear () {
     this.setState({
-      members: [],
+      members: ["Amandine", "Sam", "Jana", "Kamon", "Justin", "Erwin", "Sash", "Prem", "Tim", "Siobhan", "Julia"],
       numberTeams: 1,
-      selectedCategory: 1
+      selectedCategory: 0,
+      teams: []
     })
   },
   render () {
-    const teams = this.state.teams.map((elem, i) => {
-      return <div>elem</div>
-    })
     return (
       <div className="randomteams">
         <div className="row">
@@ -76,7 +72,7 @@ export default React.createClass({
           <div className="game-button" onClick={this.clear}>CLEAR</div>
         </div>
         <div className="row">
-          {teams}
+          <TeamList teams={this.state.teams} selectedCategory={this.state.selectedCategory}/>
         </div>
       </div>
     )
