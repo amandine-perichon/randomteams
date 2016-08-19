@@ -2,7 +2,7 @@ import React from 'react'
 import CategoryList from './CategoryList'
 import Controller from './Controller'
 import TeamList from './TeamList'
-//import NameInput from './NameInput'
+import NameInput from './NameInput'
 
 import randomTeamsGenerator from '../lib/random'
 
@@ -12,7 +12,7 @@ export default React.createClass({
   },
   getInitialState () {
     return {
-      members: ["Amandine", "Sam", "Jana", "Kamon", "Justin", "Erwin", "Sash", "Prem", "Tim", "Siobhan", "Julia"],
+      members: [],
       numberTeams: 1,
       selectedCategory: 0,
       teams: []
@@ -48,7 +48,7 @@ export default React.createClass({
   },
   clear () {
     this.setState({
-      members: ["Amandine", "Sam", "Jana", "Kamon", "Justin", "Erwin", "Sash", "Prem", "Tim", "Siobhan", "Julia"],
+      members: [],
       numberTeams: 1,
       selectedCategory: 0,
       teams: []
@@ -57,11 +57,11 @@ export default React.createClass({
   render () {
     return (
       <div className="randomteams">
-        <div className="row">
+        <div className="first row">
           <Controller onControllerChange={this.onControllerChange}/>
           <div>
-            <div>{this.state.numberTeams} teams</div>
-            {/* <NameInput onInputNameChange={this.onInputNameChange}/>*/}
+            <h2>{this.state.numberTeams} teams</h2>
+            <NameInput onInputNameChange={this.onInputNameChange}/>
           </div>
         </div>
         <div className="row">

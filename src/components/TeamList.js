@@ -13,7 +13,7 @@ export default React.createClass({
       return <Team key={i} members={elem} teamname={teamNames[i]} teamicon="To do" membericon="To do"/>
     })
     return (
-      <div className="team-list">
+      <div className="teamlist">
         {teams}
       </div>
     )

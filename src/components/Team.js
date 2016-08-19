@@ -14,12 +14,12 @@ export default React.createClass({
 
   render () {
     return (
-      <div className="team-wrapper">
+      <div className="team">
         <div className="team">
-          <span className="team-name">{this.props.teamname}</span>
-          <span className="team-members">{this.props.members.map(this.createMember)}</span>
-          <img className="teamicon-img" src ={this.props.teamicon} />
-          <img className="membericon-img" src ={this.props.membericon} />
+          <h2 className="team-name">{this.props.teamname}</h2>
+          <div className="team-members">{this.props.members.map(this.createMember)}</div>
+          {/*}<img className="teamicon-img" src ={this.props.teamicon} />
+          <img className="membericon-img" src ={this.props.membericon} />*/}
         </div>
       </div>
     )
