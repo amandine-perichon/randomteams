@@ -4,6 +4,13 @@
   background-color: grey;
 }
 
+h1 {
+  text-shadow: 6px 6px red;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
 .row {
   margin: 0px;
   padding: 0px;
@@ -27,7 +34,12 @@
   display: inline-block;
 }
 
+.controller div button{
+  color: black;
+}
+
 .game-button.go {
+  font-size: 30px;
   text-align: center;
   color: white;
   width: 470px;
@@ -35,6 +47,7 @@
 }
 
 .game-button.clear {
+  font-size: 30px;
   text-align: center;
   color: white;
   width: 470px;

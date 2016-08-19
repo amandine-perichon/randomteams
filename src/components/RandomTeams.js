@@ -57,6 +57,7 @@ export default React.createClass({
   render () {
     return (
       <div className="randomteams">
+        <h1>RETRO TEAM BLASTER</h1>
         <div className="first row">
           <Controller onControllerChange={this.onControllerChange}/>
           <div>
