@@ -47,12 +47,8 @@ export default React.createClass({
     this.setState({teams: randomTeamsGenerator(this.state.members, this.state.numberTeams)})
   },
   clear () {
-    this.setState({
-      members: [],
-      numberTeams: 1,
-      selectedCategory: 0,
-      teams: []
-    })
+    this.setState(this.getInitialState())
+    this.refs.nameinput.clear()
   },
   render () {
     return (
@@ -62,7 +58,7 @@ export default React.createClass({
           <Controller onControllerChange={this.onControllerChange}/>
           <div>
             <h2>Number of teams: {this.state.numberTeams}</h2>
-            <NameInput onInputNameChange={this.onInputNameChange}/>
+            <NameInput ref="nameinput" onInputNameChange={this.onInputNameChange}/>
           </div>
         </div>
         <div className="row">

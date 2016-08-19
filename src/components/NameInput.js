@@ -24,14 +24,15 @@ updateName (evt) {
     this.props.onInputNameChange(this.state.members)
   })
 },
-
+clear () {
+  this.setState(this.getInitialState())
+},
 render () {
   const inputFields = []
- console.log(this.state.members)
   for (let i = 1; i <= this.state.numberOfInput; i++) {
     inputFields.push((
       <div key={i}>
-        <input type="text" onChange={this.updateName} name={i}/>
+        <input type="text" onChange={this.updateName} name={i} value={this.state.members[i] || ""}/>
         <button type="button" onClick={this.addInput}>+</button>
         </div>
       ))
