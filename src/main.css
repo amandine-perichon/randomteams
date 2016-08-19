@@ -5,6 +5,8 @@
 }
 
 .row {
+  margin: 0px;
+  padding: 0px;
   border: 1px solid black;
   display: flex;
   flex-direction: row;
@@ -14,15 +16,40 @@
 .first.row {
   min-height: 200px;
 }
-.controller {
 
+.controller {
+  width: 400px;
+}
+
+.controller div {
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+}
+
+.game-button.go {
+  text-align: center;
+  color: white;
+  width: 470px;
+  background-color: green;
+}
+
+.game-button.clear {
+  text-align: center;
+  color: white;
+  width: 470px;
+  background-color: red;
 }
 
 .categorylist {
+  margin: 5px;
   background-color: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .categorylist .selected {
+  margin: 5px;
   border: 1px solid blue;
   background-color: blue;
 }

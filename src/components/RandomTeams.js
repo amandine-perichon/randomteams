@@ -68,8 +68,8 @@ export default React.createClass({
           <CategoryList selectedCategory={this.state.selectedCategory}/>
         </div>
         <div className="row">
-          <div className="game-button" onClick={this.go}>GO</div>
-          <div className="game-button" onClick={this.clear}>CLEAR</div>
+          <div className="game-button go" onClick={this.go}>GO</div>
+          <div className="game-button clear" onClick={this.clear}>CLEAR</div>
         </div>
         <div className="row">
           <TeamList teams={this.state.teams} selectedCategory={this.state.selectedCategory}/>
