@@ -8,9 +8,17 @@ export default React.createClass({
     const categories = ["mario", "pacman", "zelda", "sonic", "donkeykong"]
     const categoriesElements = categories.map((elem, i) => {
       if (i === this.props.selectedCategory) {
-        return <img key={i} className="selected" src={"./images/" + elem + ".png"} alt={elem}/>
+        return (
+        <div className="selected">
+          <img className="selected" key={i} src={"./images/" + elem + ".png"} alt={elem}/>
+        </div>
+      )
       } else {
-        return <img key={i} src={"./images/" + elem + ".png"} alt={elem}/>
+        return (
+        <div>
+          <img key={i} src={"./images/" + elem + ".png"} alt={elem}/>
+        </div>
+      )
       }
     })
     return (

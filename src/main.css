@@ -66,14 +66,23 @@ h1 {
 }
 
 .categorylist {
+  width: 950px;
   margin: 5px;
   background-color: none;
   margin: 0px;
   padding: 0px;
 }
 
-.categorylist .selected {
-  margin: 5px;
-  border: 1px solid blue;
+.team {
+  padding: 20px;
+}
+
+.categorylist div {
+  display: inline-block;
+  width: 190px;
+}
+
+.categorylist .selected,
+.categorylist .selected div {
   background-color: blue;
 }

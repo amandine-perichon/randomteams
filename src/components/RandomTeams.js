@@ -61,7 +61,7 @@ export default React.createClass({
         <div className="first row">
           <Controller onControllerChange={this.onControllerChange}/>
           <div>
-            <h2>{this.state.numberTeams} teams</h2>
+            <h2>Number of teams: {this.state.numberTeams}</h2>
             <NameInput onInputNameChange={this.onInputNameChange}/>
           </div>
         </div>
