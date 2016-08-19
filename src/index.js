@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import CategoryList from './components/CategoryList'
+import RandomTeams from './components/RandomTeams'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <CategoryList selectedCategory="mario"/>,
+    <RandomTeams />,
     document.getElementById('app')
   )
 })
