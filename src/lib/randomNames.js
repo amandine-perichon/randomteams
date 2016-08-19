@@ -1,19 +1,19 @@
 export default function (category, number) {
   switch(category) {
     case(0):
-      const namesMario = ["Mario", "Luigi", "Princess Peach", "Bowser", "Mushroom"]
+      const namesMario = ["Mario", "Luigi", "Princess Peach", "Bowser", "Yoshi"]
       return namesMario.slice(0, number)
 
     case(1):
-      const namesPacMan = ["Blinky", "Pinky", "PacMan", "Inky", "Clide"]
+      const namesPacMan = ["PacMan", "Blinky", "Pinky", "Inky", "Clide"]
       return namesPacMan.slice(0, number)
 
     case(2):
-      const namesZelda = ["Link", "Princess Zelda", "Sheik", "Navi", "Ganondorf"]
+      const namesZelda = ["Link", "Princess Zelda", "Epona", "Agahnim", "Ganondorf"]
       return namesZelda.slice(0, number)
 
     case(3):
-      const namesSonic = ["Charmy", "Tails", "sonic", "Espio", "Knuckles"]
+      const namesSonic = ["Sonic", "Tails", "Doctor Eggman", "Knuckles", "Amy Rose"]
       return namesSonic.slice(0, number)
 
     case(3):

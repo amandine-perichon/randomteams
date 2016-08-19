@@ -38,7 +38,7 @@ render () {
   }
 
   return (
-  <form className="NameInput">
+  <form className="nameinput">
     {inputFields}
   </form>
     )

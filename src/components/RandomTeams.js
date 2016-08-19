@@ -21,7 +21,7 @@ export default React.createClass({
   onControllerChange (evt) {
     const control = evt.target.attributes.name.nodeValue
     if (control === "up") {
-      this.setState({numberTeams: this.state.numberTeams + 1})
+      this.setState({numberTeams: Math.min(this.state.numberTeams + 1, 5)})
     } else if (control === "down") {
       this.setState({numberTeams: Math.max(this.state.numberTeams - 1, 1)})
     } else if (control === "left") {

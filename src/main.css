@@ -70,7 +70,6 @@ h1 {
 
 .categorylist {
   width: 950px;
-  margin: 5px;
   background-color: none;
   margin: 0px;
   padding: 0px;
@@ -81,6 +80,8 @@ h1 {
 }
 
 .categorylist div {
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: inline-block;
   width: 190px;
 }
@@ -88,4 +89,8 @@ h1 {
 .categorylist .selected,
 .categorylist .selected div {
   background-color: blue;
+}
+
+.nameinput {
+  padding: 20px;
 }
