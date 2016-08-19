@@ -9,13 +9,13 @@ export default React.createClass({
     const categoriesElements = categories.map((elem, i) => {
       if (i === this.props.selectedCategory) {
         return (
-        <div className="selected">
+        <div className="selected" key={i}>
           <img className="selected" key={i} src={"./images/" + elem + ".png"} alt={elem}/>
         </div>
       )
       } else {
         return (
-        <div>
+        <div key={i}>
           <img key={i} src={"./images/" + elem + ".png"} alt={elem}/>
         </div>
       )

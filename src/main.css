@@ -35,17 +35,20 @@ h1 {
 }
 
 .controller {
-  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 180px;
+  height: 180px;
+  padding: 20px;
 }
 
 .controller div {
-  width: 100px;
-  height: 50px;
-  display: inline-block;
+  width: 60px;
+  height: 60px;
 }
-
-.controller div button{
-  color: black;
+.controller div.button {
+  background-color: black;
+  color: white;
 }
 
 .game-button.go {

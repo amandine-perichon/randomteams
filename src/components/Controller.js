@@ -8,15 +8,15 @@ export default React.createClass({
     return (
       <div className="controller">
         <div></div>
-        <div><button name="up" onClick={this.props.onControllerChange}>UP</button></div>
+        <div className="button" name="up" onClick={this.props.onControllerChange}></div>
         <div></div>
         <br/>
-        <div><button name="left" onClick={this.props.onControllerChange}>LEFT</button></div>
-        <div></div>
-        <div><button name="right" onClick={this.props.onControllerChange}>RIGHT</button></div>
+        <div className="button" name="left" onClick={this.props.onControllerChange}></div>
+        <div className="button"></div>
+        <div className="button" name="right" onClick={this.props.onControllerChange}></div>
         <br/>
         <div></div>
-        <div><button name="down" onClick={this.props.onControllerChange}>DOWN</button></div>
+        <div className="button" name="down" onClick={this.props.onControllerChange}></div>
         <div></div>
       </div>
     )

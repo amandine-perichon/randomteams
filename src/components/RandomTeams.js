@@ -19,7 +19,7 @@ export default React.createClass({
     }
   },
   onControllerChange (evt) {
-    const control = evt.target.name
+    const control = evt.target.attributes.name.nodeValue
     if (control === "up") {
       this.setState({numberTeams: this.state.numberTeams + 1})
     } else if (control === "down") {
